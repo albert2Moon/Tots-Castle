@@ -1,3 +1,7 @@
+/* Import slick-carousel styles */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,24 +15,48 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Variables */
+  
+  --bs-primary: #FF4880;
+  
+  --secondary: #4D65F9;
+  
+  --light: #FFECF2;
+  
+  --dark: #393D72;
+  
+  --font-family-base: 'Montserrat', sans-serif;
+  
+  --headings-font-family: 'Fredoka', sans-serif;
+  
+  --body-color: #70747F;
+  
+  --headings-color: $dark;
+  
+  --headings-font-weight: 600;
+  
+  --display-font-weight: 700;
+  
+  --border-radius: 10px;
+  
+  --border-radius-sm: $border-radius;
+  
+  --border-radius-lg: $border-radius;
+  
+  --link-decoration: none;
 }
 
 a {
   font-weight: 500;
   color: #646cff;
-  text-decoration: inherit;
+  text-decoration: none;
 }
 a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+
 
 h1 {
   font-size: 3.2em;
@@ -42,7 +70,6 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -65,4 +92,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Custom CSS */
+.text-primary {
+  color: #FF4880 !important;
 }
